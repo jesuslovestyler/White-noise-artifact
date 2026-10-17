@@ -351,6 +351,32 @@
       line-height: 1.45;
     }
 
+    .home-bar {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 18px;
+    }
+
+    .home-pill {
+      display: inline-block;
+      padding: 7px 14px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--text);
+      font-size: .85rem;
+      font-weight: 500;
+      line-height: 1.2;
+      text-decoration: none;
+    }
+
+    .home-pill:hover { color: var(--accent-strong); }
+
+    .home-pill:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
     @media (max-width: 520px) {
       .shell {
         justify-content: flex-start;
@@ -385,6 +411,10 @@
 </head>
 <body>
   <main class="shell">
+    <div class="home-bar">
+      <a class="home-pill" href="https://jesuslovestyler.com/">⌂ Home</a>
+    </div>
+
     <section class="intro" aria-labelledby="page-heading">
       <h1 id="page-heading">Settle into steady sound.</h1>
       <p>Tap play, choose a tone, and set the level that feels right.</p>
@@ -620,5 +650,6 @@
       updateUI();
     }());
   </script>
+  <script data-goatcounter="https://jesuslovestyler.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
